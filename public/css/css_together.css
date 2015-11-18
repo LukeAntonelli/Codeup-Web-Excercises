@@ -1,0 +1,16 @@
+body{
+			background-image: url("../../../../../desktop/the_wolf.jpg");
+		}
+h1{
+	font-size: 4em;
+		}
+h4{
+
+	font-size: 2em;
+}		
+.abstract{
+	width: 50%;
+	font-family: 'helvitca' sans-serif;
+	line-height: 115%;
+	font-weight: bold;
+}
