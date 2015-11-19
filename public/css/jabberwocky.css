@@ -1,0 +1,41 @@
+body{
+	font-size: 1.5rem;
+}
+p{
+	font-family: sans-serif;
+	
+}
+
+#not-george{
+	background-color: red;
+	text-decoration: line-through;
+}
+
+#line1{
+	text-indent: 50px;
+}
+
+#para1{
+	text-indent: 50px;
+}
+#para2{
+
+
+	text-align: right;
+}
+#para3{
+	text-indent: 50px;
+	
+}
+#beware{
+	font-weight: bold;
+}
+
+a{
+	text-decoration: none;
+	font-family: fantasy;
+	font-size: 55px;
+}
+a:hover{
+	text-decoration: underline;
+}
