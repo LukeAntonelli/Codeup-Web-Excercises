@@ -1,0 +1,77 @@
+h1{
+	color: purple;
+	text-decoration: underline;
+}
+
+.box{
+	border: 1px solid black;
+	width: 150px;
+	height: 50px;
+	padding: 10px;
+	font-weight: bold;
+	color: #fff;
+	margin-top: 10px;
+	transition: all .3s ease-in-out;
+}
+
+.box:hover{
+	transform: scale(2.1);
+	margin-left: 100px;
+}
+
+#red{
+	background-color: #BD432E;
+}
+
+#orange{
+	background-color: orange;
+	margin-left: 30px;
+}
+
+#orange:hover{
+	margin-left: 130px;
+}
+
+#yellow{
+	background-color: yellow;
+	margin-left: 60px;
+}
+
+#yellow:hover{
+	margin-left: 160px;
+}
+
+#green{
+	background-color: green;
+	margin-left: 90px;
+}
+
+#green:hover{
+	margin-left: 190px;
+}
+
+#blue{
+	background-color: blue;
+	margin-left:120px;
+}
+#blue:hover{
+	margin-left:200px;
+}
+#violet{
+	background-color: violet;
+	margin-left: 150px;
+}
+#violet img{
+	display: none;
+}
+#violet:hover{
+	margin-left: 225px;
+}
+
+#violet:hover img{
+	display: block;
+}
+img{
+	height: 200px;
+	width: 200px;
+}
