@@ -1,0 +1,42 @@
+.flag{
+	height: 200px;
+	width: 300px;
+	border: 1px solid black;
+	position: relative;
+	margin-bottom: 20px;
+
+}
+
+#circle{
+	background: red;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	position: absolute;
+	top: 40px;
+	left: 100px;
+}
+
+#blue{
+	height: 108px;
+	width: 140px;
+	background-color: navy;
+	float: left;
+}
+img{
+	height: 108px;
+	width: 140px;
+}
+
+.red-bars{
+	width: 300px;
+	height: 15.38px;
+	background: red;
+}
+.white-bars{
+	width: 300px;
+	height: 15.38px;
+	background-color: #fff;
+}
+
+
