@@ -11,12 +11,10 @@ h1{
 	margin-bottom: 25px;
 }
 
-
 #container{
 	height: 300px;
-	width: 300px;
+	width: 400px;
 }
-
 
 img{
 	position: absolute;
@@ -39,26 +37,22 @@ img{
 #red{
 	background-color: #BD432E;
 }
-
 #orange{
 	background-color: orange;
-
+	color: black;
 }
 #yellow{
 	background-color: yellow;
-
+	color: black;
 }
-
 #green{
 	background-color: green;
-
 }
 #blue{
 	background-color: blue;
-
 }
 #violet{
-	background-color: violet;
-	
+	background-color: violet;	
 }
+p{font-family: 'PT Sans', sans-serif}
 

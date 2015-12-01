@@ -1,0 +1,58 @@
+
+body{
+	background-color: #e1e1e1;
+	background-image: url('../Images/darth.jpg');
+	background-position: center;
+	font-family: 'Sigmar One', cursive;
+
+}
+.top-nav{
+	width: 100%;
+	height: 6rem;
+	color: #FFCC33;
+	font-size: 4em;
+
+}
+.left-nav{
+	width: 15%;
+	height: 600px;
+	background-color: #fff;
+	padding: 20px;
+	float: left;
+	margin-right: 0px;
+	border-radius: 3px;
+}
+.right-nav{
+	width: 15%;
+	height: 600px;
+	background-color: #fff;
+	float: right;
+	margin-left: 5px;
+	border-radius: 3px;
+}
+.right-nav li{
+	font-size: .75em;
+}
+
+footer{
+	width: 100%;
+	height: 4rem;
+	background-color: #669966;
+	clear: both;
+}
+ul{
+	padding: 0;
+}
+li{
+	list-style-type: none;
+	padding-left: 40px;
+	padding-top: 5px;
+
+}
+
+footer{
+	padding: 5px;
+}
+footer li{
+	display: inline-block;
+}

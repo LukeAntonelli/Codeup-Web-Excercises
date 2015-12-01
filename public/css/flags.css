@@ -39,4 +39,129 @@ img{
 	background-color: #fff;
 }
 
+#top-left{
+	width: 75px;
+	height:75px;
+	background-color: red;
+}
+#bottom-left{
+	width: 75px;
+	height: 75px;
+	background-color: red;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+}
+#top-right{
+	width: 175px;
+	height: 75px;
+	background-color: red;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+}
+
+#bottom-right{
+	width: 175px;
+	height: 75px;
+	background-color: red;
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+}
+.blue-bars{
+	position: absolute;
+	background-color: navy;
+}
+#horizontal{
+	width: 300px;
+	height: 30px;
+	top: 85px;
+	left: 0px;
+}
+#vertical{
+	width: 30px;
+	height: 200px;
+	top: 0px;
+	left: 85px;
+}
+#british-flag{
+	background-color: navy;
+	overflow: hidden;
+}
+.diag-lines{
+	height: 15px;
+	width: 370px;
+	background-color: red;
+	position: absolute;
+	top: 95px;
+	left: -35px;
+	z-index: 2;
+}
+
+#top-left-to-bot-right{
+	
+	transform: rotate(35deg);
+}
+#red-line2{
+	transform: rotate(145deg);
+}
+
+.white-diag{
+	height: 30px;
+	width: 370px;
+	background-color: #fff;
+	position: absolute;
+	z-index: 1;
+	top: 90px;
+	left: -35px;
+}
+#tp-lft-bt-rt{
+	transform: rotate(35deg);
+	top: 90px;
+	left: -35px;
+	
+}
+#bt-lft-tp-rt{
+	transform: rotate(145deg);
+}
+.red-cross{
+
+	background-color: red;
+	position: absolute;
+}
+#vert-brit{
+	width: 30px;
+	height: 200px;
+	left: 135px;
+	top: 0px;
+	z-index: 1;
+}
+#horizontal-brit{
+	width: 300px;
+	height: 30px;
+	left: 0px;
+	top: 85px;
+	z-index: 1;
+}
+.white-cross{
+	background-color: #fff;
+	position: absolute;
+}
+#vert-brit-white{
+	width: 45px;
+	height: 200px;
+	left: 127px;
+	top: 0px;
+	z-indez: 0;
+}
+#horizontal-brit-white{
+	width: 300px;
+	height: 45px;
+	left: 0px;
+	top: 78px;
+	z-index: 0;
+}
+
+
 
