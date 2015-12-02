@@ -26,6 +26,7 @@
 	width: 50%;
 	background-color: #0000FF;
 	border: 1px solid #00FF33;
+	color: #fff;
 }
 .column.one-third{
 	width: 33.3%;
@@ -36,6 +37,7 @@
 	width: 25%;
 	background-color: #990000;
 	border: 1px solid #FFFF00;
+	color: #fff;
 }
 .column.one-fifth{
 	width: 20%;
@@ -52,4 +54,34 @@
 	width: 12.5%;
 	background-color: #fff;
 	border: 1px solid #336699;
+}
+
+.column.two-thirds{
+	width: 66.6%;
+	background-color: #33FF33;
+	border: 1px solid #330066;
+}
+.column.seven-eighths{
+	width: 87.5%;
+	background-color: black;
+	border: 1px solid #33FFCC;
+	color: #fff;
+}
+.column.three-quarters{
+	width: 75%;
+	background-color: #CC3300;
+	border: 1px solid #000099;
+}
+.offset-one-half{
+	margin-left: 50%;
+}
+.offset-one-third{
+	margin-left: 33.33%;
+}
+.offset-two-thirds{
+	margin-left: 66.66%;
+}
+.offset-one-fourth{
+	margin-left: 25%;
+	margin-right: 25%;
 }
