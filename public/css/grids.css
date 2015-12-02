@@ -1,4 +1,4 @@
-body{
+*, *:before, *:after{
 	box-sizing: border-box;
 }
 
@@ -20,22 +20,36 @@ body{
 .column{
 	float: left;
 	padding: 10px;
+	margin-bottom: 1em;
 }
 .column.one-half{
 	width: 50%;
+	background-color: #0000FF;
+	border: 1px solid #00FF33;
 }
 .column.one-third{
 	width: 33.3%;
+	background-color: #00CC00;
+	border: 1px solid #6600FF;
 }
 .column.one-fourth{
 	width: 25%;
+	background-color: #990000;
+	border: 1px solid #FFFF00;
 }
 .column.one-fifth{
 	width: 20%;
+	background-color: #CC6600;
+	border: 1px solid #3300FF;
 }
 .column.one-sixth{
-	width: 16.67%;
+	width: 16.666667%;
+	background-color: #003366;
+	border: 1px solid #00FF66;
+	color: #fff;
 }
 .column.one-eighth{
-	width: 12.25%;
+	width: 12.5%;
+	background-color: #fff;
+	border: 1px solid #336699;
 }
