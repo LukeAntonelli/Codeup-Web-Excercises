@@ -1,7 +1,10 @@
 *, *:before, *:after{
 	box-sizing: border-box;
 }
-
+body{
+	background-image: url('../Images/flag2.jpg');
+	background-repeat: no-repeat;
+}
 .container{
 	margin: 0 auto;
 	width: 80%;
@@ -79,6 +82,11 @@ footer{
 	font-size: .75em;
 	width: 100%;
 	padding: 1em;
+	clear: both;
+	border: 1px solid black;
+}
+footer p{
+	margin-left: 3em;
 }
 #copyright{
 	text-align: center;

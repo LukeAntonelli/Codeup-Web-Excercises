@@ -43,4 +43,37 @@
 }
 h1{
 	margin: 0;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 47px;
+    line-height: 1.25em;
+}
+
+.secondary-info{
+	padding: 1.65rem;
+	margin-left: auto;
+	margin-right: auto;
+}
+.centered{
+	text-align: center;
+}
+
+.top-margin{
+	margin-top: 1.65rem;
+	position: relative;
+}
+img{
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+.col33{
+	box-sizing: border-box;
+	width: 33.33333%;
+	padding: 2rem;
+	margin-bottom: 2rem;
+}
+
+.left-float{
+	float: left;
 }
