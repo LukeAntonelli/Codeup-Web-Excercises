@@ -1,0 +1,59 @@
+nav a{
+	color: #fff;
+}
+
+.profile-pic{
+	height: 200px;
+	width: 200px;
+	border-radius: 50%;
+	margin: auto;
+}
+
+.social{	
+	text-align: center;
+	background-color: #F2F2F2;
+}
+
+h2, h3, h5{
+	font-family: 'Rock Salt', cursive;
+	font-weight: bold;
+}
+h4, a{
+	font-family: 'hind', sans-serif;
+	padding-top: .5rem;
+	color: #00CCCC;
+}
+.fa-2x{
+	margin-left: 1.75rem;
+}
+.fa-4x{
+	padding-left: .45rem;
+}
+.intro{
+	padding: .5rem;
+	background-color: #E7E7E7;
+}
+.main-text{
+	font-family: 'hind', sans-serif;
+}
+.contact-info{
+	padding: .5rem;
+	background-color: #F2F2F2;
+}
+.selected-projects{
+	padding: .5rem;
+	background-color: #E7E7E7;
+}
+.work-experience{
+	padding: .5rem;
+	background-color: #F2F2F2;
+}
+.job-title{
+	font-weight: bold;
+	padding-top: 1rem;
+}
+.small-description{
+	font-style: italic;
+	font-size: .95rem;
+}
+
