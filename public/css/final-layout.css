@@ -1,0 +1,145 @@
+
+.background-border{
+	height: 21rem;
+	width: 15rem;
+	background-image: url('../img/cracking-and-peeling.jpg');
+}
+
+
+
+#romesco{
+	height: 20rem;
+	width: 15rem;
+	padding-right: 2rem;
+}
+
+
+#column1{
+	width: 20%;
+	padding-left: 40px;
+	padding-right: 40px;
+	padding-top: 20px;
+	float: left;
+}
+
+.fa{
+	color: grey;
+}
+.cook-name{
+	font-size: .5rem;
+	padding: .5rem;
+}
+strong{
+	font-weight: bolder;
+}
+
+#yakitori{
+	transform: rotate(270deg);
+	text-align: left;
+}
+
+.chipped{
+	width: 35%;
+	background-image: url('../img/cracking-and-peeling.jpg');
+	float: left;
+	z-index: -1;
+}
+#middle-section{
+	width: 95%;
+	float: right;
+	background-image: url("../img/yakitori.jpg");
+	height: 1200px;
+	position: relative;
+}
+
+#yellow-inset{
+	height: 150px;
+	width: 150px;
+	border-radius: 50%;
+	position: absolute;
+	top: 240px;
+	left: 40px;
+	background-color: rgba(255,255,102,.8);
+	text-align: center;
+	padding-top: 1rem;
+}
+
+#flame{
+	height: 20px;
+	width: 15px;
+}
+
+.try-it{
+	font-size: .75rem;
+	border-bottom: 1px solid black;
+}
+
+#column3{
+	float: left;
+	width: 15%;
+	padding-left: 10px;
+	position: relative;
+}
+
+
+fa-times{
+	color: grey;
+}
+.recipe-name{
+	color: #FF6600;
+	margin-bottom: .5rem;
+}
+
+.recipe{
+	list-style-type: none;
+	font-weight: bold;
+	padding: 0;
+	font-size: .65rem;
+}
+
+
+.instructions{
+	font-style: italic;
+	font-size: .65rem;
+	line-height: 1.15rem;
+}
+
+.component{
+	background-color: yellow;
+	font-weight: bold;
+	text-transform: uppercase;
+
+}
+
+#tim{
+	height: 300px;
+	width: 250px;
+	border: 10px solid white;
+	position: absolute;
+	left: -40px;
+}
+
+#column4{
+	float: left;
+	width: 20%;
+	padding-left: 40px;
+	padding-top: 40px;
+}
+
+#top-frame{
+	height: 515px;
+	width: 400px;
+	background-image: url('../img/cracking-and-peeling.jpg');
+}
+#tomato-bread{
+	height: 500px;
+	width: 400px;
+	padding-top: 15px;
+}
+
+.chef{
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	font-size: .6rem;
+	padding: .35rem;
+}
