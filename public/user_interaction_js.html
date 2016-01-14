@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>User Interaction Javascript</title>
+	<script type="text/javascript">
+// ----------- Original Attempt without a function  ----------------------
+	// todo: Ask the user for their name.
+	//       Keep asking if an empty input is provided.
+
+
+// 	var name = prompt("What is your name?");
+
+
+// 		while (name.length <= 0 || name == "null"){
+// 			alert("Please enter your name!");
+// 			var name = prompt("What is your name?");
+// 		}
+
+
+// 		// todo: Show an alert message that welcomes the user based on their input.
+// 		alert("Welcome " + name);
+// 		// todo: Ask the user if they like pizza.
+
+// 	var question = prompt("So " + name + ", are you a fan of pizza?");
+// 		//       Based on their answer show a creative alert message.
+
+// 		if (question.toLowerCase() === "yes") {
+// 			alert("Of course you do! Everyone likes pizza!");
+
+// 		}else if (question.toLowerCase() === "no"){
+// 			alert("Are you serious?? Everyone likes pizza!");
+
+// 		}
+// 		else{
+// 			alert("You need to get your life!");
+// 		}
+
+// ----------- Second Attempt with a function  ----------------------
+
+	function userInfo(){
+		// todo: Ask the user for their name.
+			var name = prompt("What is your name?");
+
+				if(!name){
+					userInfo();
+				}
+		// todo: Show an alert message that welcomes the user based on their input.
+
+				alert("Welcome " + name +"!");
+
+		// todo: Ask the user if they like pizza.
+			var question = prompt("So " + name + ", are you a fan of pizza?");	
+
+		//       Based on their answer show a creative alert message.
+		// -- Check to see if you user clicks cancel or does not provide an answer
+				if(!question){
+					alert("Whatever! See you later.");
+				} 
+				else if (question.toLowerCase() === "yes"){
+					alert("Of course you do! Everyone likes pizza!");
+				}else if (question.toLowerCase() === "no"){
+					alert("Are you serious?? Everyone likes pizza!");
+				}else{
+					alert("You need to get your life!");
+				}
+	}
+
+	userInfo();
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>
