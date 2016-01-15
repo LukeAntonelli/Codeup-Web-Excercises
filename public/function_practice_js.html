@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Function Practice</title>
+
+<script type="text/javascript">
+
+	// Function 1 - Change a string to uppercase
+
+		// function stringUpper(string){
+		// 	var myString = "Here is my string!";
+		// 	document.write(myString.toUpperCase());
+		// }
+
+		// stringUpper();
+
+
+	// Function 2 - Concatanate three words
+
+		// function conCan(){
+		// 	var word1 = prompt("What do you call your female parent?");
+		// 	var word2 = prompt("Type a verb");
+		// 	var word3 = prompt("What is your favorite sport?")
+
+		// 	document.write("Your " + word1 + " " + word2 + " " + word3 +".");
+		// }
+
+		// conCan();
+
+	// Function 3 - Change Farenheit to Celcius
+
+		// function celcius(degrees){
+		// 	var conversion = (degrees - 32) * .55555556;
+		// 	document.write("That means it is " + (Math.round(conversion * 100) / 100) + " degrees celcius.");
+		// }
+
+		// celcius(prompt("What is the temperature today?"));
+
+
+		// Function 4 - Change lbs to kg 
+
+			// function kilos(pounds){
+			// 	var conversion = (pounds * .45);
+			// 	document.write("That means you weigh " + (Math.round(conversion * 100) / 100) + " kilograms!");
+			// }
+
+			// kilos(prompt("How much do you weigh?"));
+
+
+		// Function 5 Make sure a string is between 5 and 10 characters long
+
+				// function checkString(){
+				// 	var sentence=prompt("Please create a password that is between 5 and 10 characters long.");
+				// 	if(sentence.length<5){
+				// 		alert("Your password is too short. Please use at least 5 characters.");
+				// 		checkString();
+				// 	}else if(sentence.length>10){
+				// 		alert("Your password is too long. Please use 10 characters or less.");
+				// 		checkString();
+				// 	}else{
+				// 		document.write("Thank you for creating your password.");
+				// 	}
+				// }
+
+				// checkString();
+
+		// Function 6 Determine if a letter is a vowel
+
+			// var checkVowel = function(){
+
+			// 	var answer = prompt("Please enter a vowel.");
+
+			// 	if(answer === 'a' || answer ===  'e' || answer === 'i' || answer === 'o' || answer === 'u'){
+
+			// 		document.write("Yep. That is a vowel.");
+			// 	}else{
+			// 		checkVowel();
+			// 	}
+			// }
+
+
+			// checkVowel();
+
+
+
+
+			var vowels = 'aeiouAEIOU';
+
+			function isVowel(letter){
+				
+
+				if(vowels.indexOf(letter) > -1){
+
+					document.write("true");
+
+				} else{
+
+					document.write("false");
+				}
+
+			}
+
+			isVowel('a');
+			isVowel('b');
+
+
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>
