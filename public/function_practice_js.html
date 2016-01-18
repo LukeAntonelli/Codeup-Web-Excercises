@@ -12,20 +12,20 @@
 		// 	document.write(myString.toUpperCase());
 		// }
 
-		// stringUpper();
+		// stringUpper(myString);
 
 
 	// Function 2 - Concatanate three words
 
-		// function conCan(){
-		// 	var word1 = prompt("What do you call your female parent?");
-		// 	var word2 = prompt("Type a verb");
-		// 	var word3 = prompt("What is your favorite sport?")
+	// 	function conCan(){
+	// 		var word1 = prompt("What do you call your female parent?");
+	// 		var word2 = prompt("Type a verb");
+	// 		var word3 = prompt("What is your favorite sport?")
 
-		// 	document.write("Your " + word1 + " " + word2 + " " + word3 +".");
-		// }
+	// 		document.write("Your " + word1 + " " + word2 + " " + word3 +".");
+	// 	}
 
-		// conCan();
+	// 	conCan();
 
 	// Function 3 - Change Farenheit to Celcius
 
@@ -39,13 +39,20 @@
 
 		// Function 4 - Change lbs to kg 
 
-			// function kilos(pounds){
-			// 	var conversion = (pounds * .45);
-			// 	document.write("That means you weigh " + (Math.round(conversion * 100) / 100) + " kilograms!");
+		// 	function kilos(pounds){
+		// 		var conversion = (pounds * .45);
+		// 		document.write("That means you weigh " + (Math.round(conversion * 100) / 100) + " kilograms!");
+		// 	}
+
+		// 	kilos(prompt("How much do you weigh?"));
+			
+		//Change gk to lbs
+			// function pounds(kilos){
+			// 	var conversion = (kilos * 2.2);
+			// 	document.write("That means you weigh " + (Math.round(conversion * 100) / 100) + " pounds!");
 			// }
 
-			// kilos(prompt("How much do you weigh?"));
-
+			// pounds(prompt("How much do you weigh in kilos?"));
 
 		// Function 5 Make sure a string is between 5 and 10 characters long
 
@@ -66,42 +73,42 @@
 
 		// Function 6 Determine if a letter is a vowel
 
-			// var checkVowel = function(){
+			var checkVowel = function(){
 
-			// 	var answer = prompt("Please enter a vowel.");
+				var answer = prompt("Please enter a vowel.");
 
-			// 	if(answer === 'a' || answer ===  'e' || answer === 'i' || answer === 'o' || answer === 'u'){
+				if(answer === 'a' || answer ===  'e' || answer === 'i' || answer === 'o' || answer === 'u'){
 
-			// 		document.write("Yep. That is a vowel.");
-			// 	}else{
-			// 		checkVowel();
-			// 	}
-			// }
-
-
-			// checkVowel();
-
-
-
-
-			var vowels = 'aeiouAEIOU';
-
-			function isVowel(letter){
-				
-
-				if(vowels.indexOf(letter) > -1){
-
-					document.write("true");
-
-				} else{
-
-					document.write("false");
+					document.write("Yep. That is a vowel.");
+				}else{
+					checkVowel();
 				}
-
 			}
 
-			isVowel('a');
-			isVowel('b');
+
+			checkVowel();
+
+
+
+
+			// var vowels = 'aeiouAEIOU';
+
+			// function isVowel(letter){
+				
+
+			// 	if(vowels.indexOf(letter) > -1){
+
+			// 		document.write("true");
+
+			// 	} else{
+
+			// 		document.write("false");
+			// 	}
+
+			// }
+
+			// isVowel('a');
+			// isVowel('b');
 
 
 
