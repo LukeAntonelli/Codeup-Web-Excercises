@@ -7,10 +7,10 @@
 	<h1>H1 Heading</h1>
 	<p>A paragraph of text goes between the p tags!</p>
 	<ul id = "big-dumb-list">
-		<li class = "dumb-list-item">Unordered List item #1</li>
-		<li class = "dumb-list-item">Unordered List item #2</li>
-		<li class = "dumb-list-item">Unordered List item #3</li>
-		<li class = "dumb-list-item">Unordered List item #4</li>
+		<li class = "">Unordered List item #1</li>
+		<li class = "">Unordered List item #2</li>
+		<li class = "">Unordered List item #3</li>
+		<li class = "">Unordered List item #4</li>
 	</ul>
 
 	<ol id="second-big-dumb-list">
@@ -28,13 +28,11 @@
 
 <script type="text/javascript">$(document).ready(function(){
 	
-	alert("The DOM is loaded!");
+	console.log("The DOM is loaded!");
 
-	var contents = $("#second-big-dumb-list").html();
-	alert(contents);
+	$(".codeup").css("border", "1px solid red");
 
-	var divContents = $("#big-dumb-div").html();
-	alert(divContents);
+
 })
 
 </script>
