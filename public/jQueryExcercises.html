@@ -30,7 +30,10 @@
 	
 	console.log("The DOM is loaded!");
 
-	$(".codeup").css("border", "1px solid red");
+	$("h1").css("font-size", "20px");
+	$("h1, p, li").css("background-color", "yellow");
+	var contents = $("h1").html();
+	alert(contents);
 
 
 })
