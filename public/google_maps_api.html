@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Favorite Restaurant on Google Maps</title>
+	<style type="text/css">
+        #map-canvas {
+            width: 770px;
+            height: 481px;
+        }
+    </style>
+
+</head>
+
+	<div id="map-canvas"></div>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBv5CMqZPxoeqyvLj8m1kEnbEWPyVltMeQ"></script>
+
+	 <script type="text/javascript">
+	 	(function(){
+
+	 		"use strict";
+
+	 		var mapOptions ={
+
+	 			zoom: 10,
+
+	 			center:{
+	 				lat: 29.4284595,
+	 				lng: -98.492433
+	 			}
+	 		};
+
+	 		var address = "203 S St. Mary's St, San Antonio, Texas 78205";
+
+	 		var restaurantArray = {
+	 			"rest":[
+	 			{
+	 				"name": "Chauma Gaucha",
+	 				"address": "18318 Sonterra Pl, San Antonio, TX 78258",
+	 				"infoWindow": "Restaurant #1",
+	 				"position":{lat: 29.6102622, lng: -98.4977782}
+	 			},
+	 			{
+	 				"name": "Yellow Fish",
+	 				"address": "9102 Wurzbach Rd, San Antonio, TX",
+	 				"infoWindow": "Restaurant #2",
+	 				"position":{lat: 29.5267374, lng: -98.5662338}
+
+	 			},
+	 			{
+	 				"name": "El Chaparral",
+	 				"address": "15103 Bandera Rd, San Antonio, TX",
+	 				"infoWindow": "Restaurant #3",
+	 				"position":{ lat:29.5834449, lng:-98.6944532}
+
+	 			}
+	 		]};
+
+	 		var geocoder = new google.maps.Geocoder();
+
+	 		geocoder.geocode({"address":address}, function(results, status){
+
+	 			if(status == google.maps.GeocoderStatus.OK){
+
+	 				map.panTo(results[0].geometry.location);
+	 				restaurantArray.forEach(function(rest, index){
+
+	 			
+
+	 				var infowindow = new google.maps.InfoWindow({
+
+	 				content: rest.infoWindow
+	 				
+	 				});
+
+	 		});
+	 				var marker = new google.maps.Marker({
+	 					position: rest.position,
+	 					map: map,
+	 					animation: google.maps.Animation.DROP
+	 				});
+
+	 	
+	 				
+	 				// marker.addListener('click', function(){infowindow.open(map, marker));
+
+	 			}else{
+	 				 alert("Geocoding was not successful - STATUS: " + status);
+	 			}
+	 		});
+
+
+	 
+	 		var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+
+	 		// var marker = new google.maps.Marker({
+	 		// 			"position": results[0].geometry.location,
+	 		// 			"map": map,
+	 		// 			"animation" : google.maps.Animation.DROP
+	 		// 		});
+
+	 		// var infowindow = new google.maps.InfoWindow({
+
+	 		// 		content: address
+	 				
+	 		// 		});
+
+
+	 		
+
+
+	 		
+
+
+	 		
+
+	 	})();
+
+	 </script>
+<body>
+
+</body>
+</html>

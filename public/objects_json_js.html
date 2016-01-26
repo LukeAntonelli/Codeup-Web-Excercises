@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JSON</title>
+</head>
+
+<script type="text/javascript">
+
+	var books = [
+			
+			{
+				"title" : "To Kill A Mockingbird",
+				"author":{
+					"firstName" : "Harper",
+					"lastName" : "Lee"
+						}, 
+				"yearPublished" : 1960,
+				"yearsOfVersions" :[
+
+					1980,
+					1999,
+					2010
+				]
+			},
+
+			{
+				"title" : "The Great Gatsby",
+				"author" :{
+					"firstName" : "F. Scott",
+					"lastName" : "Fitzgerald"
+				},
+				"yearPublished" : 1925,
+				"yearsOfVersions" :[
+					
+					1940,
+					1985,
+					2000
+				]
+			},
+
+			{
+				"title" : "Don Quixote",
+				"author" :{
+					"firstName" : "Miguel",
+					"lastName" : "de Cervantes Saavedra"
+				},
+				"yearPublished" : 1606,
+				"yearsOfVersions" :[
+					1612,
+					1700,
+					1742,
+					1755
+
+				]
+
+			},
+			{
+				"title" : "War and Peace",
+				"author" : {
+					"firstName" : "Leo",
+					"lastName" : "Tolstoy"
+				},
+				"yearPublished" : 1869,
+				"yearsOfVersions" :[
+					1812,
+					1983
+
+				]
+			},
+
+			{
+				"title" : "Ulysses",
+				"author" :{
+					"firstName" : "James",
+					"lastName" : "Joyce"
+				},
+				"yearPublished": 1904,
+				"yearsOfVersions" :[
+					1922, 
+					1934, 
+					1984
+				]
+			}
+
+		]
+
+	console.log(books.title);
+
+	function logBooks(element, index, array){
+	// for(i = 0; i<books.length; i++)
+		console.log("Book # " + (index + 1));
+		console.log("Title: " + element.title);
+		console.log("Author: " + element.author.firstName +" " + element.author.lastName);
+		console.log("Year Published: " + element.yearPublished);
+		console.log("Version Releases: " + element.yearsOfVersions);
+	};
+
+	books.forEach(logBooks);
+	
+
+</script>
+<body>
+
+</body>
+</html>

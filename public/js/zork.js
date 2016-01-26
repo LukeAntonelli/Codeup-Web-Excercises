@@ -74,7 +74,9 @@ while(currentLocation!=winDestination){
 				currentLocation = "clearing";
 			}
 			else if (response.toLowerCase()=="drink the water"){
-				alert("You are dead Dave!");
+				alert("You are dead Dave! Start over and get it right.");
+				currentLocation = "forest";
+
 			}
 			else{
 				alert(errorMessage);

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Math Objects</title>
+
+<!-- getArea: is creating a method -->
+<!-- To access the method from inside another function or method, use "this." -->
+
+	<script type="text/javascript">
+
+	// create a circle object
+	var circle = {
+    radius: 3,
+
+    getArea: function () {
+    
+      	return (Math.PI * Math.pow(this.radius,2));
+      	
+       
+    },
+
+    
+
+    logInfo: function (round) {
+        // todo: complete this method. if round is true, round the result to the nearest integer.
+        
+        if (round) {
+
+        	console.log('Area of a circle with radius: ' + this.radius + ', is: ' + Math.round(this.getArea()));
+        }
+        else{
+        	console.log("This is not a circle.");
+
+        }
+
+        
+    }
+
+};
+
+
+circle.logInfo(false);
+circle.logInfo(true);
+
+circle.radius = 5;
+circle.logInfo(false);
+circle.logInfo(true);
+
+
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>
