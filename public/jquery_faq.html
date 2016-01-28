@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery FAQ</title>
+	<style type="text/css">
+		.invisible{
+			display: none;
+		}
+		.visible{
+			display: blue;
+		}
+
+	</style>
+</head>
+<body>
+
+<!-- create a definition list containing 10 FAQs about national parks. -->
+<!-- add class of invisible to all dd items, then set display to none in css. (above) -->
+	<dl>
+		<h2>Top Ten Questions About National Parks:</h2>
+
+		<dt>Do we have to pay to get in?</dt>
+		<dd class ="invisible">Yes it is $20 to get in.</dd>
+
+		<dt>What will we see?</dt>
+		<dd class ="invisible">You will see all kinds of stuff!</dd>
+
+		<dt>Is there food?</dt>
+		<dd class ="invisible">No bring your own!</dd>
+
+		<dt>What animals will we see?</dt>
+		<dd class ="invisible">Lions, Tigers, and Bears</dd>
+
+		<dt>Can we pet the animals?</dt>
+		<dd class ="invisible">If you want to get eaten yes.</dd>
+
+		<dt>Can we feed the animals?</dt>
+		<dd class ="invisible">If you want to get eaten, yes.</dd>
+
+		<dt>Can we tour in a helicopter?</dt>
+		<dd class ="invisible">Yes if you own a helicopter.</dd>
+
+
+		<dt>Can we camp in the park?</dt>
+		<dd class ="invisible">If you want to get eaten, yes.</dd>
+
+		<dt>Can we drive in the park?</dt>
+		<dd class ="invisible">Unless you want to get eaten, you better drive.</dd>
+
+		<dt>Where is Yogi?</dt>
+		<dd class ="invisible">Don't be stupid.</dd>
+
+	</dl>
+
+
+
+
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript">
+"use strict";
+
+$(document).ready(function() {
+
+$('dt').click(function(){
+	$('dd').toggleClass("invisible");
+});
+});
+	
+</script>
+</body>
+</html>

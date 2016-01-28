@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculate</title>
+	<style type="text/css">
+	.container{
+		padding-top: 10rem;
+	}
+	.display{
+		padding-bottom: 5rem;
+	}
+
+	#results{
+		background-color: black;
+		color: #fff;
+		height: 8rem;
+		margin-bottom: 4rem;
+	}
+		
+	</style>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-7s5uDGW3AHqw6xtJmNNtr+OBRJUlgkNJEo78P4b0yRw= sha512-nNo+yCHEyn0smMxSswnf/OnX6/KwJuZTlNZBjauKhTK0c+zT+q5JOCx0UFhXQ6rJR9jg6Es8gPuD2uZcYDLqSw==" crossorigin="anonymous">
+
+</head>
+<body>
+
+	<div class = "container">
+		<div class = "row">
+			<div class="col-md-12" id="results"></div>
+
+		</div>
+		<div class = "row display">
+			<div class = "col-md-1"></div>
+			<div class = "col-md-3"><input type = "text" id="first-operand"></div>
+			<div class = "col-md-1"></div>
+			<div class = "col-md-3"><input type = "text" id="operator"></div>
+			<div class = "col-md-1"></div>
+			<div class = "col-md-3"><input type = "text" id="second-operand"></div>
+		</div>
+
+
+		<div class="row">
+
+		<a href="#" id="seven"><div class = "col-md-3 btn btn-primary">7</div></a>
+		<a href="#" id="eight"><div class = "col-md-3 btn btn-primary">8</div></a>
+		<a href="#" id="nine"><div class = "col-md-3 btn btn-primary">9</div></a>
+		<a href="#" id="multipy"><div class = "col-md-3 btn btn-primary">x</div></a>
+
+		</div>
+
+		
+
+		<div class="row">
+
+		<a href="#" id="four"><div class = "col-md-3 btn btn-primary">4</div></a>
+		<a href="#" id="five"><div class = "col-md-3 btn btn-primary">5</div></a>
+		<a href="#" id="six"><div class = "col-md-3 btn btn-primary">6</div></a>
+		<a href="#" id="minus"><div class = "col-md-3 btn btn-primary">-</div></a>
+
+		</div>
+
+		<div class="row">
+
+		<a href="#" id="one"><div class = "col-md-3 btn btn-primary">1</div></a>
+		<a href="#" id="two"><div class = "col-md-3 btn btn-primary">2</div></a>
+		<a href="#" id="three"><div class = "col-md-3 btn btn-primary">3</div></a>
+		<a href="#" id="plus" ><div class = "col-md-3 btn btn-primary" >+</div></a>
+
+		</div>
+
+		<div class="row">
+			<a href="#" id="zero"><div class = "col-md-6 btn btn-primary">0</div></a>
+			<a href="#" id="decimal"><div class = "col-md-3 btn btn-primary">.</div></a>
+			<a href="#" id="equals"><div class = "col-md-3 btn btn-primary">=</div></a>
+		</div>
+
+
+	</div>
+
+
+
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha256-KXn5puMvxCw+dAYznun+drMdG1IFl3agK0p/pqT9KAo= sha512-2e8qq0ETcfWRI4HJBzQiA3UoyFk6tbNyG+qSaIBZLyW9Xf3sWZHN/lxe9fTh1U45DpPf07yj94KsUHHWe4Yk1A==" crossorigin="anonymous"></script>
+
+
+<script type="text/javascript">
+	var num = "";
+		$(document).ready(function(){
+
+		// numbers
+			$("#one").click(function(){
+				num = num + '1';
+				$("#first-operand").val(num); 
+			});
+			$("#two").click(function(){
+				num = num + '2';
+				$("#first-operand").val(num); 
+			});
+
+			$("#three").click(function(){
+				num = num + '3';
+				$("#first-operand").val(num); 
+			});
+			$("#four").click(function(){
+				num = num + '4';
+				$("#first-operand").val(num); 
+			});
+			$("#five").click(function(){
+				num = num + '5';
+				$("#first-operand").val(num); 
+			});
+			$("#six").click(function(){
+				num = num + '6';
+				$("#first-operand").val(num); 
+			});
+			$("#seven").click(function(){
+				num = num + '7';
+				$("#first-operand").val(num); 
+			});
+			$("#eight").click(function(){
+				num = num + '8';
+				$("#first-operand").val(num); 
+			});
+			$("#nine").click(function(){
+				num = num + '9';
+				$("#first-operand").val(num); 
+			});
+			$("#zero").click(function(){
+				num = num + '0';
+				$("#first-operand").val(num); 
+			});
+
+		// Operators
+			$("#plus").click(function(){
+				var add =$(this).text(); 
+				$('#operator').val(add);
+				});
+
+			$("#decimal").click(function(){
+				var point = $(this).text();
+				$("first-operand").append(point); 
+			});
+
+
+			$("#calculate").click(function(){
+				var firstOperand = $("#first-operand").val();
+				console.log(firstOperand);
+				var secondOperand = $("#second-operand").val();
+				console.log(secondOperand);
+				var operator = $("#operator").val();
+				console.log(operator);
+
+			});
+
+		});
+
+
+
+</script>
+</body>
+</html>
