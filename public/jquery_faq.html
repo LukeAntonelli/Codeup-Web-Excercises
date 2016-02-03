@@ -52,6 +52,34 @@
 
 	</dl>
 
+<h3>Rocky Mountain National Park</h3>
+	<ul class="invisible">
+		<li>415 square miles </li>
+		<li>Trail Ridge Road – which crests over 12,000 feet </li>
+		<li>300 miles of hiking trails</li>
+		<li>A winter elk herd numbering between 200-600</li>
+
+	</ul>
+
+<h3>Great Sand Dunes National Park</h3>
+	<ul class="invisible">
+		<li>contains the tallest dunes in North America and one of the most fragile and complex dune systems in the world</li>
+		<li>protects a globally significant, water- and wind-driven system, which includes creeks that demonstrate surge flow, a rare hydrologic phenomenon </li>
+		<li>hosts a great diversity of plants and animals, including insect species found nowhere else on earth. The system, which spans high desert to alpine life zones, supports rare biological communities that are mostly intact and functional</li>
+		<li>contains some of the oldest (9,000+ years before present) known archeological sites in America. The dunes have been identified as having special importance by people of various cultures, and the area is recognized for the culturally diverse nature of human use</li>
+
+	</ul>
+
+<h3>Mesa Verde National Park</h3>
+
+	<ul class="invisible">
+		<li>Mesa Verde National Park is open year round. The Operating Hours & Seasons page gives you more detailed seasonal information and park schedules.</li>
+		<li>Reservations are accepted for camp sites. Morefield Campground is located inside the park and operated by ARAMARK.</li>
+		<li> Pets are allowed in the park on a very limited basis. They are allowed in parking lots and in the campground only and must be under your physical control at all times. Pets should not be left alone or in vehicles. They are NOT allowed in archaeological sites or on any of the park trails. There is currently no kenneling facilities available in the park, but there are some available in Cortez and Durango. For more information, go to the Pets Page.</li>
+		<li>Montezuma County, Colorado</li>
+
+	</ul>
+
 
 
 
@@ -62,9 +90,18 @@
 $(document).ready(function() {
 
 $('dt').click(function(){
-	$('dd').toggleClass("invisible");
+	$(this).next().toggleClass("invisible");
 });
+
+$("ul li:first-child").css("font-weight", "bold");
+
+$('h3').click(function(){
+	$(this).next().toggleClass('invisible');
 });
+
+});
+
+
 	
 </script>
 </body>

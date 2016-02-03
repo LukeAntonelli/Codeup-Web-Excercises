@@ -25,12 +25,12 @@
 
 	<div class = "container">
 		<div class = "row">
-			<div class="col-md-12" id="results"></div>
+			<div class="col-md-12" id="results" readonly></div>
 
 		</div>
 		<div class = "row display">
 			<div class = "col-md-1"></div>
-			<div class = "col-md-3"><input type = "text" id="first-operand"></div>
+			<div class = "col-md-3"><input type = "text" id="first-operand" class="activeOperand"></div>
 			<div class = "col-md-1"></div>
 			<div class = "col-md-3"><input type = "text" id="operator"></div>
 			<div class = "col-md-1"></div>
@@ -43,7 +43,7 @@
 		<a href="#" id="seven"><div class = "col-md-3 btn btn-primary">7</div></a>
 		<a href="#" id="eight"><div class = "col-md-3 btn btn-primary">8</div></a>
 		<a href="#" id="nine"><div class = "col-md-3 btn btn-primary">9</div></a>
-		<a href="#" id="multipy"><div class = "col-md-3 btn btn-primary">x</div></a>
+		<a href="#" id="multiply"><div class = "col-md-3 btn btn-primary">x</div></a>
 
 		</div>
 
@@ -89,51 +89,63 @@
 		// numbers
 			$("#one").click(function(){
 				num = num + '1';
-				$("#first-operand").val(num); 
+				$(".activeOperand").val(num); 
 			});
 			$("#two").click(function(){
 				num = num + '2';
-				$("#first-operand").val(num); 
+				$(".activeOperand").val(num); 
 			});
 
 			$("#three").click(function(){
 				num = num + '3';
-				$("#first-operand").val(num); 
+				$(".activeOperand").val(num); 
 			});
 			$("#four").click(function(){
 				num = num + '4';
-				$("#first-operand").val(num); 
+				$(".activeOperand").val(num); 
 			});
 			$("#five").click(function(){
 				num = num + '5';
-				$("#first-operand").val(num); 
+				$(".activeOperand").val(num); 
 			});
 			$("#six").click(function(){
 				num = num + '6';
-				$("#first-operand").val(num); 
+				$(".activeOperand").val(num); 
 			});
 			$("#seven").click(function(){
 				num = num + '7';
-				$("#first-operand").val(num); 
+				$(".activeOperand").val(num); 
 			});
 			$("#eight").click(function(){
 				num = num + '8';
-				$("#first-operand").val(num); 
+				$(".activeOperand").val(num); 
 			});
 			$("#nine").click(function(){
 				num = num + '9';
-				$("#first-operand").val(num); 
+				$(".activeOperand").val(num); 
 			});
 			$("#zero").click(function(){
 				num = num + '0';
-				$("#first-operand").val(num); 
+				$(".activeOperand").val(num); 
 			});
 
 		// Operators
 			$("#plus").click(function(){
 				var add =$(this).text(); 
 				$('#operator').val(add);
+				$('#first-operand').toggleClass("activeOperand");
+				$('#first-operand').attr('readonly');
 				});
+
+			$("#minus").click(function(){
+				var subtract=$(this).text();
+				$('#operator').val(subtract);
+			});
+
+			$("#multiply").click(function(){
+				var multi=$(this).text();
+				$('#operator').val(multi);
+			});
 
 			$("#decimal").click(function(){
 				var point = $(this).text();
