@@ -90,13 +90,13 @@
 $(document).ready(function() {
 
 $('dt').click(function(){
-	$(this).next().fadeIn();
+	$(this).next().slideToggle();
 });
 
 $("ul li:first-child").css("font-weight", "bold");
 
 $('h3').click(function(){
-	$(this).next().fadeIn();
+	$(this).next().slideToggle();
 });
 
 });
