@@ -90,13 +90,13 @@
 $(document).ready(function() {
 
 $('dt').click(function(){
-	$(this).next().toggle("slow");
+	$(this).next().fadeIn();
 });
 
 $("ul li:first-child").css("font-weight", "bold");
 
 $('h3').click(function(){
-	$(this).next().show("slow");
+	$(this).next().fadeIn();
 });
 
 });
