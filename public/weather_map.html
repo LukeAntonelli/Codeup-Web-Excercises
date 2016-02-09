@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Weather Map</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	
+	<style type="text/css">
+
+		#weatherApp{
+
+			width: 75%;
+			background-color: #00CCFF;
+			font-family: sans-serif;
+			padding-left: 25%;
+
+		}
+
+		.forecast{
+			float: left;
+			background-color: #fff;
+			border: 1px solid black;
+
+		}
+		.dailyForecast{
+			float: left;
+			background-color: #eee;
+			padding: 2rem;
+			border: 1px solid grey;
+
+
+		}
+		#cityName{
+			font-weight: bolder;
+			font-size: 2rem;
+		}
+		.label{
+			font-weight: bold;
+		}
+		.icon{
+			margin-left: 40px;
+		}
+		.temp{
+			font-size: 1.5rem;
+			font-weight: bolder;
+			text-align: center;
+		}
+		.dayOfWeek{
+			font-size: 1.25rem;
+			font-weight: bold;
+			text-align: center;
+		}
+		input{
+			margin-left: 5px;
+		}
+	</style>
+
+</head>
+<body>
+
+
+
+<div id = "weatherApp">
+	<h2>Weather Application</h2>
+
+		<input type="text" name="longitude" placeholder="Longitude" id="long">
+		<input type="text" name="latitude" placeholder="Latitude" id="lat">
+		<input type = "submit" value="submit" id="submit">
+
+	<p id = "cityName"></p>
+
+	<div id = "forecast">
+
+	</div>
+</div>
+
+
+
+<script type="text/javascript">
+
+	// $('#submit').click(function(){
+	// 	var longitude = $('#long').val();
+	// 	var latitude = $('#lat').val();
+	// });
+	
+	$.get("http://api.openweathermap.org/data/2.5/forecast/daily",{
+		APPID: "5915ed837dfc08a19088b197e62dd1d2",
+		q: "San Antonio, TX",
+		units: "imperial",
+		cnt: 3,
+		// lat: latitude,
+		// lon: longitude
+	})
+	.always(function(data){
+		console.log(data);
+
+	})
+	.done(function(data){
+
+		$('#cityName').append(data.city.name);
+
+		data.list.forEach(function(element, index){
+
+			var icon = element.weather[0].icon;
+			var iconURL = "http://openweathermap.org/img/w/" + icon + ".png";
+
+			var d = new Date(element.dt*1000);
+			var weekday = new Array(7);
+			weekday[0] = "Sunday";
+			weekday[1] ="Monday";
+			weekday[2] = "Tuesday";
+			weekday[3] = "Wednesday";
+			weekday[4] = "Thursday";
+			weekday[5] = "Friday";
+			weekday[6] = "Saturday";
+
+			var day = weekday[d.getDay()];
+
+ 
+			$('#forecast').append("<div class = 'dailyForecast'>" + "<p class='dayOfWeek'>" + day + "</p>" + "<p class='temp'>" + Math.round(element.temp.max) + "&deg" + "/" + Math.round(element.temp.min) + "&deg" + "</p>" +
+				"<img src =" + iconURL + " class = 'icon'>" +
+				"<p><label class = 'label'>" + 
+				element.weather[0].main + ":</label> " + element.weather[0].description  + "</p>" +
+				"<label class ='label'>Humidity: </label>"  + element.humidity + 
+				"<p><label class ='label'>Wind: </label>" + element.speed + "</p>" +
+				"<p><label class='label'>Pressure: </label>" + element.pressure + "</p>" +
+				"</div>"); 
+
+		}).fail(function(){
+
+		alert('There was an error in the data!');
+	})
+})
+		
+
+		
+
+		
+
+		// $('#cityName').append(data.city.name);
+		
+		// $('#day2').append(data.list[1].temp.max + "/" + data.list[1].temp.min);
+		// $('#day3').append(data.list[2].temp.max + "/" + data.list[2].temp.min);
+	
+	
+</script>
+
+</body>
+</html>
+
+
+

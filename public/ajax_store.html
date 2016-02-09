@@ -17,6 +17,22 @@
             background-color: #0066FF;
             color: #fff;
         }
+
+        #refreshButton{
+            padding: 5px;
+            background-color: #FF6600;
+            color: #fff;
+            font-family: sans-serif;
+            font-weight: bolder;
+            width: 100px;
+            height: 30px;
+            margin-left: 200px;
+            margin-top: 50px;
+            text-align: center;
+        }
+        a{
+            text-decoration: none;
+        }
     </style>
 </head>
 
@@ -35,24 +51,28 @@
     </thead>
     <tbody id="insertProducts"></tbody>
 </table>
+<a href="#"><div id ="refreshButton">Refresh</div></a>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
 <script>
 $(document).ready(function() {
     // TODO: Create an ajax GET request for /data/inventory.json
-    $.ajax("data/inventory.json").done(function(data) {
+
+   $.ajax("data/inventory.json").done(function(data) {
         data.forEach(function(element, index){
-            $("#products").append("<tr><td>" + element.title + "</td>" + "<td>"+ element.quantity + "</td>"+ "<td>" + element.price + "</td>" + "<td>" + element.categories + "</td></tr>");
+            $("#insertProducts").append("<tr><td>" + element.title + "</td>" + "<td>"+ element.quantity + "</td>"+ "<td>" + element.price + "</td>" + "<td>" + element.categories + "</td></tr>");
         })
     }).fail(function() {
         alert("There was an error!");
     })
+    $('#refreshButton').click();
     // TODO: Take the data from inventory.json and append it to the products table
     //       HINT: Your data should come back as a JSON object; use console.log() to inspect
     //             its contents and fields
     //       HINT: You will want to target #insertProducts for your new HTML elements
-});
+    });
+
 </script>
 
 </body>
